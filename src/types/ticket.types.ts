@@ -1,3 +1,5 @@
+import { IUser } from "./user.types";
+
 export interface ITicket {
   id: String;
   title: String;
@@ -5,7 +7,7 @@ export interface ITicket {
   customerName: String;
   status: TicketStatus;
   createdById: String;
-  createdBy: User;
+  createdBy: IUser;
   comments: IComment[];
   assignments: IAssignment[];
 }
